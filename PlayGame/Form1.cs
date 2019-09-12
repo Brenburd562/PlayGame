@@ -21,6 +21,8 @@ namespace PlayGame
 
         private void Form1_Shown(object sender, EventArgs e)
         {
+            //11-09-19. Brendan Burdett
+            //A simple game introduction starting with a "Play Game" in a box and when clicked it starts a count down
             //declartion of varables 
             Graphics g = this.CreateGraphics();
             SolidBrush blackbrush = new SolidBrush(Color.Black);
@@ -30,7 +32,7 @@ namespace PlayGame
             //clearing screen for black background then drawing large white rectangle and smaller black rectangle inside it for border 
             g.Clear(Color.Black);
             g.FillRectangle(whitebrush, 250, 150, 300, 200);
-            g.FillRectangle(drawBrush, 260, 160, 280, 180);
+            g.FillRectangle(blackbrush, 260, 160, 280, 180);
             
             //writing words to fit in box
             g.DrawString("Play Game", Arial, whitebrush, 270, 220);
